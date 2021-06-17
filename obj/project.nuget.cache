@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OpFcTdOYeG5TabB8/7V50hSWBXESlwGB5SH5Y+SvzgyCS9HPxD1tLVZIBn1xX9Zcbnym2N/U90JJUedgGOZqCA==",
+  "dgSpecHash": "Kv2LZxS64DU4UzpDXgdNk0hmjnirM9bXTKkWFR71weLJVkr8GptPd6FlAaqmO9S8Ph0Wck0JNN3KnpVy5wPLzQ==",
   "success": true,
   "projectFilePath": "/home/marko/Desktop/git/Food.UnitTests/Food.UnitTests.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/home/marko/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "/home/marko/.nuget/packages/castle.core/4.4.0/castle.core.4.4.0.nupkg.sha512",
     "/home/marko/.nuget/packages/coverlet.collector/1.3.0/coverlet.collector.1.3.0.nupkg.sha512",
+    "/home/marko/.nuget/packages/fluentassertions/5.10.3/fluentassertions.5.10.3.nupkg.sha512",
     "/home/marko/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/5.0.6/microsoft.aspnetcore.authentication.jwtbearer.5.0.6.nupkg.sha512",
     "/home/marko/.nuget/packages/microsoft.aspnetcore.jsonpatch/5.0.6/microsoft.aspnetcore.jsonpatch.5.0.6.nupkg.sha512",
     "/home/marko/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/5.0.6/microsoft.aspnetcore.mvc.newtonsoftjson.5.0.6.nupkg.sha512",
