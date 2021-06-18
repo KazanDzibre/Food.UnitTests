@@ -35,7 +35,7 @@ namespace Food.UnitTests
         public void GetUserById_WithExistingUser_ReturnsExpectedItem()
         {
             //Arrange
-            var ExpectedUser = CreateRandomUser();
+            var ExpectedUser = CreateRandomUser(2);
             _userService.Setup(p => p.GetUserById(2)).Returns(ExpectedUser);
             var Controller = new UserController(mapperStub.Object, _userService.Object);
 
@@ -47,11 +47,27 @@ namespace Food.UnitTests
                     options => options.ComparingByMembers<User>());
         }
 
-        private User CreateRandomUser()
+        [Fact]
+        public void GetAll_WithExistingUsers_ReturnsAllUsers()
+        {
+            //Arrange
+            var ExpectedUsers = new []{ CreateRandomUser(2), CreateRandomUser(3), CreateRandomUser(4) };
+            _userService.Setup(p => p.GetAll()).Returns(ExpectedUsers);
+            var Controller = new UserController(mapperStub.Object, _userService.Object);
+
+            //Act
+            var results = (OkObjectResult)Controller.GetAll().Result;
+
+            //Assert
+            results.Value.Should().BeEquivalentTo(ExpectedUsers,
+                    options => options.ComparingByMembers<User>());
+        }
+
+        private User CreateRandomUser(int n)
         {
             return new()
             {
-                Id = 2,
+                Id = n,
                 FirstName = Guid.NewGuid().ToString(),
                 LastName = Guid.NewGuid().ToString(),
                 UserName = Guid.NewGuid().ToString(),
