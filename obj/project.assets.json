@@ -9283,19 +9283,19 @@
     ]
   },
   "packageFolders": {
-    "/home/marko/.nuget/packages/": {}
+    "/home/aleksandar/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/marko/Desktop/git/Food.UnitTests/Food.UnitTests.csproj",
+      "projectUniqueName": "/home/aleksandar/Desktop/temp1/Food.UnitTests/Food.UnitTests.csproj",
       "projectName": "Food.UnitTests",
-      "projectPath": "/home/marko/Desktop/git/Food.UnitTests/Food.UnitTests.csproj",
-      "packagesPath": "/home/marko/.nuget/packages/",
-      "outputPath": "/home/marko/Desktop/git/Food.UnitTests/obj/",
+      "projectPath": "/home/aleksandar/Desktop/temp1/Food.UnitTests/Food.UnitTests.csproj",
+      "packagesPath": "/home/aleksandar/.nuget/packages/",
+      "outputPath": "/home/aleksandar/Desktop/temp1/Food.UnitTests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/marko/.nuget/NuGet/NuGet.Config"
+        "/home/aleksandar/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -9307,8 +9307,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/marko/Desktop/git/Food/Food.csproj": {
-              "projectPath": "/home/marko/Desktop/git/Food/Food.csproj"
+            "/home/aleksandar/Desktop/temp1/Food/Food.csproj": {
+              "projectPath": "/home/aleksandar/Desktop/temp1/Food/Food.csproj"
             }
           }
         }
@@ -9371,7 +9371,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
       }
     }
   }

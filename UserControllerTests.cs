@@ -4,7 +4,9 @@ using FluentAssertions;
 using Food.Configuration;
 using Food.Controllers;
 using Food.Core;
+using Food.Dtos;
 using Food.Model;
+using Food.Profiles;
 using Food.Service;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
@@ -16,6 +18,7 @@ namespace Food.UnitTests
     {
 
         private readonly Mock<IMapper> mapperStub = new(); 
+
         private readonly Mock<IUserService> _userService = new Mock<IUserService>();
         private readonly Random rand = new();
 
@@ -63,6 +66,40 @@ namespace Food.UnitTests
                     options => options.ComparingByMembers<User>());
         }
 
+
+		// [Fact]
+		// public void Register_WithExistingUser_ReturnsRegisteredUser()
+		// {
+			// var myProfile = new UserProfile();
+			// var configuration = new MapperConfiguration(cfg => cfg.AddProfile(myProfile));
+			// var mapper = new Mapper(configuration);
+			
+			// var RegisterDto = new UserRegisterDto()
+			// {
+				// FirstName = "Marko",
+				// LastName = "Ruzic",
+				// UserName = "markoruzic997",
+				// Type = "Admin",
+				// longitude = 15,
+				// latitude = 15,
+				// Password = "password"
+			// };
+
+			// User ExpectedUser = mapper.Map<User>(RegisterDto);
+			// _userService.Setup(p => p.Add(ExpectedUser)).Returns(ExpectedUser);
+
+			// var Controller = new UserController(mapper , _userService.Object);
+			// //Act
+
+			// var result = (OkObjectResult)Controller.Register(RegisterDto).Result;
+
+			// //Assert
+
+			// result.Value.Should().BeEquivalentTo(RegisterDto,
+					// options => options.ComparingByMembers<User>().ExcludingMissingMembers());
+
+		// }
+		
         private User CreateRandomUser(int n)
         {
             return new()
